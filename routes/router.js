@@ -1,5 +1,10 @@
-export class Router {
-    routes = {}
+import Starting from "../js/main.js";
+
+const starting = new Starting();
+
+
+export default class Router {
+    routes = {};
 
     add(routeName, page) {
         this.routes[routeName] = page
@@ -17,7 +22,7 @@ export class Router {
     handle() {
         const { pathname } = window.location
         const route = this.routes[pathname] || this.routes[404]
-        console.log('antes do fetch')
+        starting.menu(pathname);
         fetch(route)
             .then(data => data.text())
             .then(html => {

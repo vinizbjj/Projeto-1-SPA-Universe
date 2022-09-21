@@ -9,6 +9,7 @@
     --tt-color: #ffffff;
     --tt-nav: #C4C4CC;
     --ff-size: 'Roboto', sans-serif;
+    --fc-btn: #02799D;
 }
 
 nav {
@@ -29,7 +30,7 @@ nav {
     text-decoration: none;
 
     width: 48rem;
-    height: 4.2rem;    
+    height: 4.2rem;
 }
 
 a {
@@ -38,15 +39,12 @@ a {
     font-weight: 400;
 }
 
-body {
-    background-image: url(./assets/mountains-universe-1.png);
-    background-repeat: no-repeat;
-    font-family: var(--ff-size);
-    max-height: 100vh;
-    max-width: 100vw;
-    background-size: cover;
-    overflow: hidden;
+.active {
+  color: var(--tt-color);
+  font-size: 2.4rem;
+  font-weight: 700;
 }
+
 
 .container {
     min-height: 82vh;
@@ -61,20 +59,26 @@ h1 {
     font-size: 4.8rem;
     font-weight: 700;
     margin-bottom: 2.4rem;
-
 }
 
-.btnHome {
+.abt p {
     color: var(--tt-color);
-    font-size: 1.4rem;
-    font-weight: 700;
-
-    background-color: transparent;
-    border-radius: 0.5rem;
-    border: 2px solid #FFFFFF;
-
-    width: 19.5rem;
-    height: 4.8rem;
-
-    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 64.8rem;
+    height: 100%;
 }
+
+.contact {
+    margin-left: 10.2rem;
+    margin-top: 6.3rem;
+}
+
+.contact p {
+    color: var(--tt-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 64.8rem;
+    height: 100%;
+}
+

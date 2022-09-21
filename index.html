@@ -8,23 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
     <title>SPA</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
     <nav>
         <div class="navIcons">
             <img src="./assets/Vector.svg" alt="icone site">
-            <a href="/" onclick="route()">Home</a>
-            <a href="/about" onclick="route()">O Universo</a>
-            <a href="/contact" onclick="route()">Exploração</a>
+            <a class="home" href="/" onclick="route()">Home</a>
+            <a class="about" href="/about" onclick="route()">O Universo</a>
+            <a class="explorer" href="/explorer" onclick="route()">Exploração</a>
         </div>
     </nav>
 
     <div id="app"></div>
 
-    <script src="js/index.js" type="module"></script>
+    <script src="/routes/index.js" type="module"></script>
 </body>
 
 </html>
