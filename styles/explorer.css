@@ -1,0 +1,9 @@
+body {
+    background-image: url(../assets/mountains-universe-3.png);
+    background-repeat: no-repeat;
+    font-family: var(--ff-size);
+    max-height: 100vh;
+    max-width: 100vw;
+    background-size: cover;
+    overflow: hidden;
+}
